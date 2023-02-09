@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "TT Lakes Regular";
+  src: url("../fonts/TTLakes-Regular.eot");
+  src: url("../fonts/TTLakes-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/TTLakes-Regular.woff") format("woff"), url("../fonts/TTLakes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes Medium";
+  src: url("../fonts/TTLakes-Medium.eot");
+  src: url("../fonts/TTLakes-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/TTLakes-Medium.woff") format("woff"), url("../fonts/TTLakes-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  min-height: 509px;
+  overflow-x: hidden;
+  font-family: "TT Lakes Medium";
+}
+
+.container {
+  padding: 24px 16px 24px 16px;
+}
+
+@media screen and (min-width: 450px) {
+  .container {
+    max-width: 768px;
+  }
+}
+.header {
+  background-color: white;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.header__inner-block_left,
+.header__inner-block_right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__inner-block:nth-child(1)::before {
+  position: fixed;
+  left: 186px;
+  content: " ";
+  display: block;
+  height: 32px;
+  width: 2px;
+  background: #eaeaea;
+  border-radius: 1px;
+}
+
+@media screen and (min-width: 800px) {
+  .header {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) {
+  .header__inner-block:nth-child(1)::before {
+    left: 66px;
+  }
+}
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+}
+.button-profile {
+  display: none;
+}
+.button-chat {
+  display: none;
+}
+.button-call {
+  display: none;
+}
+
+.button__divider-right {
+  display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .button-profile {
+    display: block;
+  }
+  .button-chat {
+    display: block;
+  }
+  .button-call {
+    display: block;
+  }
+  .button__divider-right {
+    display: block;
+  }
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(248, 248, 248);
+  min-height: 320px;
+}
+
+.title {
+  display: flex;
+}
+.title__h1 {
+  font-family: "TT Lakes Regular";
+}
+.title__h1_padding {
+  padding: 0px 16px 0px 16px;
+}
+
+.section__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__menu_padding {
+  padding-right: 32px;
+}
+.section__menu {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.scroll-bar {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-left: 16px;
+  margin-bottom: 10px;
+  height: 25px;
+}
+
+.scroll-bar__card {
+  flex: 0 0 auto;
+  padding: 8px;
+  cursor: pointer;
+  color: #7e7e82;
+}
+
+.scroll-bar__card_active {
+  background: #ffffff;
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+}
+
+.description {
+  max-width: 312px;
+}
+.description_padding {
+  padding: 0 16px 16px 16px;
+}
+.description__p_visible {
+  display: none;
+}
+
+.read-more {
+  max-width: 125px;
+  max-height: 24px;
+}
+.read-more__button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .section__page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.section__menu_visible {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  .description__img {
+    width: 530px;
+    height: 300px;
+  }
+  .description__p_visible {
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) {
+  .description__p_visible {
+    display: block;
+  }
+  .section__menu_visible {
+    display: flex;
+  }
+}/*# sourceMappingURL=style.css.map */

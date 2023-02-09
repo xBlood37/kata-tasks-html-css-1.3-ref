@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="index.js"></script>
+    <title>CPS ремонт</title>
+  </head>
+  <body>
+    <!-- header menu -->
+    <!-- normalize взял из страрого проекта -->
+    <!-- map тоже -->
+    <!-- sass рулит -->
+    <!-- плагин live scss compiler -->
+    <!-- я старался -->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__inner-block header__inner-block_left">
+            <button class="button button-burger">
+              <img src="./img/burger.svg" alt="" />
+            </button>
+            <a class="button-group" href="#"
+              ><img src="./img/Group.svg" alt="Group"
+            /></a>
+          </div>
+          <div class="header__inner-block header__inner-block_right">
+            <button class="button button-call">
+              <img src="./img/call.svg" alt="" />
+            </button>
+            <button class="button button-chat">
+              <img src="./img/chat.svg" alt="" />
+            </button>
+            <button class="button button-profile">
+              <img src="./img/profile.svg" alt="" />
+            </button>
+            <button class="button button-repair">
+              <img src="./img/repair.svg" alt="" />
+            </button>
+            <button class="button button-checkstatus">
+              <img src="./img/checkstatus.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- main -->
+    <main class="main">
+      <section class="section section__title">
+        <div class="title">
+          <h1 class="title__h1 title__h1_padding">Услуги и сервисы</h1>
+        </div>
+        <div class="section__menu section__menu_padding section__menu_visible">
+          <span>Оставить заявку</span>
+          <button class="button button-repair">
+            <img src="./img/repair.svg" alt="" />
+          </button>
+          <span>Статус ремонта</span>
+          <button class="button button-checkstatus">
+            <img src="./img/checkstatus.svg" alt="" />
+          </button>
+        </div>
+      </section>
+      <!-- section scroll bar -->
+      <section class="section">
+        <div class="scroll-bar">
+          <span class="scroll-bar__card scroll-bar__card_active" role="button"
+            >Ремонтируемые бренды</span
+          >
+          <span class="scroll-bar__card" role="button"
+            >Ремонтируемые устройства</span
+          >
+          <span class="scroll-bar__card" role="button">Цены на услуги</span>
+          <span class="scroll-bar__card" role="button"
+            >Адреса сервисных центров</span
+          >
+          <span class="scroll-bar__card" role="button">Специальные цены</span>
+          <span class="scroll-bar__card" role="button">Отзывы</span>
+        </div>
+      </section>
+      <section class="section section_height">
+        <div class="section__page">
+          <div class="description description_padding">
+            <p class="description__p">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </p>
+            <p class="description__p description__p_visible">
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера
+            </p>
+            <p class="description__p description__p_visible">
+              Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+              очередь, советуют нас родным и близким.
+            </p>
+            <div class="read-more read-more_padding">
+              <div class="read-more__button">
+                <img class="read-more__img" src="./img/icon.svg" alt="icon" />
+                <span class="read-more__span">Читать далее</span>
+              </div>
+            </div>
+          </div>
+          <img class="description__img" src="./img/bg.png" alt="background" />
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
