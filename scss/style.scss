@@ -1,4 +1,5 @@
 // через import не хочет
+// хотя код шо тут шо там один и тот же
 // @import "fonts";
 
 @font-face {
@@ -66,28 +67,12 @@ body {
   gap: 20px;
 }
 
-// палочка номер один
-.header__inner-block:nth-child(1)::before {
-  position: fixed;
-  left: 186px;
-  content: " ";
-  display: block;
-  height: 32px;
-  width: 2px;
-  background: #eaeaea;
-  border-radius: 1px;
+.img {
+  &_position {
+    position: relative;
+    right: 3px;
+  }
 }
-// палочка номер два сьезжает при разрешении больше 750
-// .header__inner-block:nth-child(2)::before {
-//   position: fixed;
-//   right: 125px;
-//   content: " ";
-//   display: none;
-//   height: 32px;
-//   width: 2px;
-//   background: #eaeaea;
-//   border-radius: 1px;
-// }
 
 @media screen and (min-width: 800px) {
   .header {
@@ -95,10 +80,28 @@ body {
   }
 }
 
+.img_visible {
+  display: none;
+}
+
 @media screen and (min-width: 500px) {
   .header {
     &__inner-block:nth-child(1)::before {
       left: 66px;
+    }
+  }
+  .img {
+    // костыль
+    &_position {
+      left: 1px;
+    }
+
+    &_visible {
+      display: inline-block;
+    }
+
+    &_visible-two {
+      display: none;
     }
   }
 }
@@ -282,3 +285,27 @@ body {
     }
   }
 }
+
+// для моего iphone
+// для себя сделал что бы перед друзьями хвастаться
+// ниже код можно не проверять
+@media screen and (min-width: 375px) {
+  .description {
+    &__img {
+      min-width: 372px;
+    }
+  }
+
+  .section {
+    &_height {
+      height: 100vh;
+    }
+  }
+
+  .img {
+    &_visible-two {
+      display: none;
+    }
+  }
+}
+// забыл у меня же нет друзей :(

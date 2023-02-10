@@ -6,16 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="index.js"></script>
     <title>CPS ремонт</title>
   </head>
   <body>
-    <!-- header menu -->
-    <!-- normalize взял из страрого проекта -->
-    <!-- map тоже -->
-    <!-- sass рулит -->
+    <!-- normalize взял из страрого проекта что бы было на всякий готовлюсь к 1.6-->
+    <!-- map тоже что бы было на всякий готовлюсь к 1.6 -->
+    <!-- sass рулит готовлюсь к 1.6 -->
     <!-- плагин live scss compiler -->
+    <!-- javascript'ом легче сделать и мучиться там надо поменьше -->
+    <!-- хотя если это переписать на реакте то будет еще лучше -->
+    <!-- в зависимости от разрешения просто рендерить тот или иной компонент -->
+    <!-- брать разрешение глобального обьекта window вроде но могу ошибаться -->
+    <!-- при модульной архитектуре прям хорошо -->
+    <!-- вообще вроде как все медия запросы можно закинуть в отдельный scss файл но точно не знаю -->
     <!-- я старался -->
+
+    <!-- header menu -->
     <header class="header">
       <div class="container">
         <div class="header__inner">
@@ -23,9 +29,19 @@
             <button class="button button-burger">
               <img src="./img/burger.svg" alt="" />
             </button>
+            <img
+              class="img img_position img_visible"
+              src="./img/divider.svg"
+              alt=""
+            />
             <a class="button-group" href="#"
               ><img src="./img/Group.svg" alt="Group"
             /></a>
+            <img
+              class="img img_position img_visible-two"
+              src="./img/divider.svg"
+              alt=""
+            />
           </div>
           <div class="header__inner-block header__inner-block_right">
             <button class="button button-call">
@@ -81,6 +97,7 @@
           <span class="scroll-bar__card" role="button">Отзывы</span>
         </div>
       </section>
+      <!-- main info-->
       <section class="section section_height">
         <div class="section__page">
           <div class="description description_padding">
