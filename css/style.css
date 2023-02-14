@@ -1,14 +1,18 @@
 @font-face {
   font-family: "TT Lakes Regular";
   src: url("../fonts/TTLakes-Regular.eot");
-  src: url("../fonts/TTLakes-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/TTLakes-Regular.woff") format("woff"), url("../fonts/TTLakes-Regular.ttf") format("truetype");
+  src: url("../fonts/TTLakes-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TTLakes-Regular.woff") format("woff"),
+    url("../fonts/TTLakes-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "TT Lakes Medium";
   src: url("../fonts/TTLakes-Medium.eot");
-  src: url("../fonts/TTLakes-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/TTLakes-Medium.woff") format("woff"), url("../fonts/TTLakes-Medium.ttf") format("truetype");
+  src: url("../fonts/TTLakes-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TTLakes-Medium.woff") format("woff"),
+    url("../fonts/TTLakes-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -27,6 +31,13 @@ body {
   min-height: 509px;
   overflow-x: hidden;
   font-family: "TT Lakes Medium";
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(248, 248, 248);
+  min-height: 320px;
 }
 
 .container {
@@ -76,11 +87,8 @@ body {
 }
 
 @media screen and (min-width: 500px) {
-  .header__inner-block:nth-child(1)::before {
-    left: 66px;
-  }
   .img_position {
-    left: 1px;
+    left: 0.5px;
   }
   .img_visible {
     display: inline-block;
@@ -127,12 +135,6 @@ body {
     display: block;
   }
 }
-.main {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(248, 248, 248);
-  min-height: 320px;
-}
 
 .title {
   display: flex;
@@ -145,11 +147,6 @@ body {
 }
 
 .section__title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.section_title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -269,4 +266,4 @@ body {
 
 .read-more__span_font-weight {
   font-weight: 500;
-}/*# sourceMappingURL=style.css.map */
+}
